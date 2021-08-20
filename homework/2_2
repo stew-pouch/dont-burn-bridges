@@ -8,8 +8,9 @@ int main() {
     using namespace std;
     int dollar = 0, cent = 0, centSum = 0, remaining = 0,
     quarter = 0, dime = 0, nickel = 0, penny = 0;
-    cout << "Please enter your amount in the format of dollars and cents separated by a space:" << endl;
-    cin >> dollar >> cent; // TODO: Receive a proper dollar input, such as $4.65
+    char dollarCapture = '$', centCapture = '.';
+    cout << "Please enter your cash amount in the format $dd.cc: ";
+    cin >> dollarCapture >> dollar >> centCapture >> cent;
     centSum = dollar * centsInDollar + cent;
     quarter = centSum / centsInQuarter;
     remaining = centSum % centsInQuarter;
@@ -17,9 +18,38 @@ int main() {
     remaining = remaining % centsInDime;
     nickel = remaining / centsInNickel;
     penny = remaining % centsInNickel;
-    cout << endl << dollar << " dollars and " << cent << " cents are:" << endl
-    << quarter << " quarters, " << dime << " dimes, " << nickel << " nickels and "
-    << penny << " pennies" << endl;
-    //There should be a more elegant process than reassigning the remaining variable.
+    cout.setf(ios::fixed);
+    cout.setf(ios::showpoint);
+    cout.precision(2);
+    cout << endl << '$' << (((dollar * 100.0) + cent) / 100.0) << " is:" << endl;
+    if (quarter > 0){
+        cout << quarter << " quarter";
+        if (quarter > 1){
+            cout << 's';
+        }
+        cout << endl;
+    }
+    if (dime > 0){
+        cout << dime << " dime";
+        if (dime > 1){
+            cout << 's';
+        }
+        cout << endl;
+    }
+    if (nickel > 0){
+        cout << nickel << " nickel";
+        if (nickel > 1){
+            cout << 's';
+        }
+        cout << endl;
+    }
+    if (penny > 0){
+        if (penny > 1){
+            cout << penny << " pennies" << endl;
+        }
+        else {
+            cout << "1 penny" << endl;
+        }
+    }
     return 0;
 }
