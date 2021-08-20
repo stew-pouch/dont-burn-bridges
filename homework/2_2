@@ -1,0 +1,25 @@
+#include <iostream>
+
+const int centsInDollar = 100, centsInQuarter = 25, centsInDime = 10, centsInNickel = 5;
+/* Avoiding magic numbers, assign cent value of coins as constants.
+ * We shouldn't need to declare penny value, multiplying by 1. */
+
+int main() {
+    using namespace std;
+    int dollar = 0, cent = 0, centSum = 0, remaining = 0,
+    quarter = 0, dime = 0, nickel = 0, penny = 0;
+    cout << "Please enter your amount in the format of dollars and cents separated by a space:" << endl;
+    cin >> dollar >> cent; // TODO: Receive a proper dollar input, such as $4.65
+    centSum = dollar * centsInDollar + cent;
+    quarter = centSum / centsInQuarter;
+    remaining = centSum % centsInQuarter;
+    dime = remaining / centsInDime;
+    remaining = remaining % centsInDime;
+    nickel = remaining / centsInNickel;
+    penny = remaining % centsInNickel;
+    cout << endl << dollar << " dollars and " << cent << " cents are:" << endl
+    << quarter << " quarters, " << dime << " dimes, " << nickel << " nickels and "
+    << penny << " pennies" << endl;
+    //There should be a more elegant process than reassigning the remaining variable.
+    return 0;
+}
