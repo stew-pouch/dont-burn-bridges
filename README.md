@@ -1,5 +1,5 @@
 # dont-burn-bridges
-This a repository of completed assignments NYU's Tandon Bridge to MS in CS.  The files posted herein have been significantly modifications that were post-submission.  Such changes improve functionality, correct errors, conform to personal style guide changes, and include small, otherwise unwritten changes to discourage current and future students from scraping this code for their own submissions.  
+This a repository of completed assignments a university bridge to MS in CS.  The files posted herein have been significantly modifications that were post-submission.  Such changes improve functionality, correct errors, conform to personal style guide changes, and include small, otherwise unwritten changes to discourage current and future students from scraping this code for their own submissions.  
 
 #################################################################################################################################################################
 
