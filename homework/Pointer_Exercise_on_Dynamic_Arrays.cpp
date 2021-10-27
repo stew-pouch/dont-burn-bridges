@@ -1,3 +1,9 @@
+/* User is queried for an amount of integers, and then prompted to specify
+ * integers of entered amount.  The program will return as output all of the
+ * integers entered that are greater than zero.  The program performs this
+ * output operation 4 times, executed 4 different ways in code.
+ * Method 4 was obnoxious to implement. */
+
 #include <iostream>
 
 int* get_pos_nums1(const int *arr, int arrSize, int &outPosArrSize);
@@ -122,7 +128,6 @@ void get_pos_nums3(const int *arr, int arrSize, int *&outPosArr, int &outPosArrS
 }
 
 void get_pos_nums4(const int *arr, int arrSize, int **outPosArrPtr, int *outPosArrSizePtr){
-    // I spent an awful amount of time trying to create a dynamic array from a double pointer.  C++ said no.
     int marker = 0;
     int *posArr4;
     int arr4Size = 0;
