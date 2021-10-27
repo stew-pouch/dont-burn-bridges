@@ -1,3 +1,7 @@
+/* User is queried to enter two lines of text.  Program returns as output
+ * whether or not the two entered lines of text are anagrams.  Results are not
+ * case sensitive.  Ignores numbers, spaces, and special characters. */
+
 #include <iostream>
 using namespace std;
 
