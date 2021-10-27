@@ -1,3 +1,7 @@
+/* User is queried for a line of text.  Program returns as output the amount
+ * words in the entered text, as well the count of each alphabetical letter. 
+ * Program ignores numbers and special characters. */
+
 #include <iostream>
 
 void count_letters(char line[], int letters[], int &words); //Reads for sentinel input '\0' instead of determining taking length.
