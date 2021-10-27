@@ -1,3 +1,5 @@
+/* User is queried for a sentence.  The program returns as output the string of text
+ * separated by each word on a new line. */
 #include <iostream>
 #include <string>
 using namespace std;
