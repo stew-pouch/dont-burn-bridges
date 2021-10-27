@@ -1,8 +1,6 @@
-/*Stephen Paltz: NetID sp6343 for NYU Tandon CS Bridge
- * (24 Week, Winter 2021)
- * Homework #7, Question 1 as assigned by Prof. Itay Tal
- * Assignment due: Fri, 26 Feb 2021 @ 22:55 CST*/
-
+/* User is queried for a year, and its starting day.  The program returns as output
+* a calender, with accurate to the day of the week and for leap years.  Future 
+* improvements could include [marking] holidays. */
 #include <iostream>
 using namespace std;
 
