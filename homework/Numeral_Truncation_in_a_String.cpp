@@ -1,3 +1,7 @@
+/* It is not a good idea to share your password online.  
+* This program reads a string entered by the user, 
+* and truncates any segment that consists entirely of numbers. */
+
 #include <iostream>
 #include <string>
 
