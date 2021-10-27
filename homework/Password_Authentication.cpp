@@ -1,3 +1,10 @@
+/* User is presumed to have set and know their PIN# (default: 86753).  User 
+ * is prompted to correlate a sequence of pseudorandom digits against their 
+ * decimal value, in regards to their PIN#.  Example: If sequence 
+ * [1 3 1 2 3 3 1 3 3 2] is provided to correlate [0 1 2 3 4 5 6 7 8 9], the 
+ * user's correct response with a PIN of 86753 would be 31332.  The program 
+ * returns 1 on a proper authentication, 0 for a failure to authenticate. */
+
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
