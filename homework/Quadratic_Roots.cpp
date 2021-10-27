@@ -1,5 +1,10 @@
+/* User is queried for three numerical values: a, b, & c.  These values correspond to the numerical
+ * constant in a quadratic polynomial equation: f(x) = ax^2 + bx + c.  The program returns as 
+ * output the quadratic roots based on the given values, if they exist.  Supports imaginary and
+ * complex roots. */
+
 #include <iostream>
-#include <cmath>
+#include <cmath> // Uses sqrt()
 
 int main() {
     using namespace std;
