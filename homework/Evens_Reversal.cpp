@@ -1,3 +1,7 @@
+/* User is queried an amount of integers followed by a sequence of integers.
+ * The program returns as output the entered integers, where the even
+ * integers have separated from the odd numbers, and reversed in order. */
+
 #include <iostream>
 using namespace std;
 
