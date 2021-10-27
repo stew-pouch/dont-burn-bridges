@@ -1,3 +1,5 @@
+
+// User is queried for a full name. The program returns as output the name, as would be expected in a database of contacts.
 #include <iostream>
 #include <string>
 
